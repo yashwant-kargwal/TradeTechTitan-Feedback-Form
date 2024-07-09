@@ -21,7 +21,7 @@
                 <H1>We appreciate your feedback</H1>
                 <hr>
                 <div class="box1-form">
-                    <div class="box2-form">
+                    <div>
                 <label for="name" class="name" >Name :</label>
                 <input type="text" name="Name" id="name" class="name" placeholder="Enter Your Name" required maxlength="50">
 
@@ -45,7 +45,7 @@
                 <textarea name="Message" id="Improvebox" cols="50" rows="5" maxlength="150" placeholder="We love your feedback" required></textarea>
 
                 <br>
-                <label for="Submit"></label>
+                <label for="submit"></label>
                 <input type="submit" id="submit">
                     </div>
                 </div>
@@ -54,7 +54,7 @@
     </div>
 
     <script>
-        var form = document.getElementById('sheetdb-form');
+         var form = document.getElementById('sheetdb-form');
     form.addEventListener("submit", e => {
       e.preventDefault();
       fetch(form.action, {
